@@ -10,4 +10,4 @@ La démonstration se déroulera selon le scénario suivant :
 3. Démonstration des fonctionnalités
 4. Questions 
 
-Pensez à préparer votre présentation car 20 minutes c'est très court pour présenter à la fois le travail effectué et justifié les choix techniques.
+Pensez à préparer votre présentation car 20 minutes c'est très court pour, à la fois, présenter le travail effectué et justifier les choix techniques.
