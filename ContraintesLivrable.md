@@ -6,7 +6,7 @@ projet. L'évaluation prenant en compte ces consignes, vous devez impérativemen
 perdre des points bêtement.
 
 ## Contraintes de rendu pour le livrable final
-* Le rendu se fera à la fois sur votre dépot github privé et sous forme d'une archive au format ZIP qui portera les noms de 
+* Le rendu se fera à la fois sur votre dépot GitHub privé et sous forme d'une archive au format ZIP qui portera les noms de 
 famille de chaque membre accolés par ordre alphabétique. Par exemple, si les noms sont Dupont, Martin, Durand et Cornet, 
 cette dernière s'appellera : `CornetDupontDurantMartin.zip`
 * Vous devez en plus fournir l'adresse du dépôt privé github de votre projet. Veillez à ce que votre enseignant ait bien 
@@ -45,9 +45,9 @@ Pour mesurer votre dette technique, vous pouvez mettre en oeuvre des outils comm
 
 
 ## Instruction concernant la gestion de version
-* La livraison finale de votre code devra se faire sur un dépôt github privé. Rien ne vous empêche d'utiliser un 
+* La livraison finale de votre code devra se faire sur un dépôt GitHub privé. Rien ne vous empêche d'utiliser un 
 autre outil pendant votre travail mais n'oubliez pas de correctement pousser l'intégralité de votre historique sur 
-le dépôt github pour le rendu final.
+le dépôt GitHub pour le rendu final.
 * Le projet devra disposer d'une branche `master` contenant uniquement les `release`. Dans cette branche, chaque 
 `release` fera l'objet d'un tag dont le nom donnera une indication sur la version de votre logiciel (par exemple, v0.1.1 
 ou v0.1.1alpha).
