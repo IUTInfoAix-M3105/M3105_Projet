@@ -1,4 +1,4 @@
-# Projet - Simulateur d'un réseau ferroviaire
+# Simulateur d'un réseau ferroviaire - HyperFrisette
 
 
 ### Conception et Programmation Objets Avancées (module M3105)
@@ -80,12 +80,15 @@ La mise en œuvre du projet passera par la réalisation des classes et méthodes
 
 ### Gares
 
+### Trains
 
-### Train
+### Entreprises Ferroviaires
 
- 
+### Lignes Ferroviaires
 
 ### Tronçons
+
+### Trajets
 
 ### Contrôleur
 
