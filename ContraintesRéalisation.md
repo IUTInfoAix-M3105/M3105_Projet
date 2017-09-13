@@ -6,7 +6,7 @@ projet. L'évaluation prenant en compte ces consignes, vous devez impérativemen
 perdre des points bêtement.
 
 ## Contraintes de rendu pour le livrable final
-* Le rendu se fera à la fois sur votre dépot GitHub privé. Ce dépôt portera les noms de 
+* Le rendu se fera le dépôt GitHub portant les noms de 
 famille de chaque membre accolés par ordre alphabétique. Par exemple, si les noms sont Dupont, Martin, Durand et Cornet, 
 cette dernière s'appellera : `CornetDupontDurantMartin_ProjetM3105`
 * Attention à correctement nommer vos contributeurs pour que le correcteur puisse 
