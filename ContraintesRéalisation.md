@@ -5,26 +5,6 @@ Ce document a donc pour objet de vous donner l'ensemble des contraintes techniqu
 projet. L'évaluation prenant en compte ces consignes, vous devez impérativement les prendre en compte pour ne pas 
 perdre des points bêtement.
 
-## Contraintes de rendu pour le livrable final
-* Le rendu se fera le dépôt GitHub portant les noms de 
-famille de chaque membre accolés par ordre alphabétique. Par exemple, si les noms sont Dupont, Martin, Durand et Cornet, 
-cette dernière s'appellera : `CornetDupontDurantMartin_ProjetM3105`
-* Attention à correctement nommer vos contributeurs pour que le correcteur puisse 
-suivre individuellement les contributions des membres de votre équipe (Un exemple qui s'est déjà produit, le nom de 
-contributeur `Choucroute Garnie` n'apporte aucun renseignement vis-à-vis de la personne réelle qui a fait une contribution).
-* La construction ainsi que le cycle de vie du logiciel devront être gérés avec un outil dédié comme Maven. Un projet 
-sans un gestionnaire adapté du cycle de vie du code source ne sera pas évalué.
-* L'archive contiendra un dossier `src` avec l'intégralité du code ainsi qu'un fichier `install/README.md` contenant 
-les indications pour compiler et exécuter le programme. Aucun fichier binaire exécutable ne doit être dans l'archive.
-* Le fichier `install/README.md` doit être lisible par un utilisateur quelconque et auto-suffisant (aucune autre 
-connaissance ne doit être requise pour une compréhension complète) pour compiler et exécuter le programme. Il doit 
-contenir les instructions concernant les contraintes logicielles de l'environnement d'exécution afin de guider 
-parfaitement l'utilisateur.
-* Un dossier `test` contenant les tests unitaires devra également être inclus dans l'archive avec les instructions pour 
-leur exécution.
-* Le dossier `doc` devra contenir la documentation complète du code source (JavaDoc).
-
-
 ## Instructions concernant la réalisation du projet
 * L'utilisation d'un outil de gestion de versions est obligatoire (voir instruction ci-après).
 * Les tests unitaires doivent être réalisés pour valider chaque fonctionnalité programmée tout au long du développement 
@@ -42,11 +22,11 @@ l'expressivité du code ne sont pas une option. La modélisation objet et le res
 programmation (principes SOLID entre autre) font partie des règles que vous devez impérativement mettre en oeuvre. 
 Pour mesurer votre dette technique, vous pouvez mettre en oeuvre des outils comme `SonarQube`
 
-
 ## Instruction concernant la gestion de version
-* La livraison finale de votre code devra se faire sur un dépôt GitHub privé. Rien ne vous empêche d'utiliser un 
-autre outil pendant votre travail mais n'oubliez pas de correctement pousser l'intégralité de votre historique sur 
-le dépôt GitHub pour le rendu final.
+* La livraison finale de votre code devra se faire sur un dépôt GitHub privé. Ce dépôt portera les noms de 
+famille de chaque membre accolés par ordre alphabétique. Par exemple, si les noms sont Dupont, Martin, Durand et Cornet, 
+ce dernier s'appellera : `CornetDupontDurantMartin_ProjetM3105`
+* Attention à correctement nommer vos contributeurs pour que le correcteur puisse suivre individuellement les contributions des membres de votre équipe (Un exemple qui s'est déjà produit, le nom de contributeur `Choucroute Garnie` n'apporte aucun renseignement vis-à-vis de la personne réelle qui a fait une contribution).
 * Le projet devra disposer d'une branche `master` contenant uniquement les `release`. Dans cette branche, chaque 
 `release` fera l'objet d'un tag dont le nom donnera une indication sur la version de votre logiciel (par exemple, v0.1.1 
 ou v0.1.1alpha).
@@ -61,3 +41,16 @@ de comprendre l'objet de la modification.
 des `pull-request` pour permettre une revue de code systématique.
 * Pour simplifier au maximum le graphe des révisions de votre dépot, quand vous travaillez à plusieurs sur la même 
 branche de fonctionnalité, l'usage de la commande `rebase` est conseillé par rapport à la commande `merge`.
+
+## Contraintes de rendu pour le livrable final
+* La construction ainsi que le cycle de vie du logiciel devront être gérés avec un outil dédié comme Maven. Un projet 
+sans un gestionnaire adapté du cycle de vie du code source ne sera pas évalué.
+* L'archive contiendra un dossier `src` avec l'intégralité du code ainsi qu'un fichier `install/README.md` contenant 
+les indications pour compiler et exécuter le programme. Aucun fichier binaire exécutable ne doit être dans l'archive.
+* Le fichier `install/README.md` doit être lisible par un utilisateur quelconque et auto-suffisant (aucune autre 
+connaissance ne doit être requise pour une compréhension complète) pour compiler et exécuter le programme. Il doit 
+contenir les instructions concernant les contraintes logicielles de l'environnement d'exécution afin de guider 
+parfaitement l'utilisateur.
+* Un dossier `test` contenant les tests unitaires devra également être inclus dans l'archive avec les instructions pour 
+leur exécution.
+* Le dossier `doc` devra contenir la documentation complète du code source (JavaDoc).
