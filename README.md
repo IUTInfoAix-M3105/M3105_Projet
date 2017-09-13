@@ -15,4 +15,4 @@ Conception et Programmation Objets Avancées [![Build Status](https://travis-ci.
 
 Au cours de votre travail de conception et de réalisation, pensez à respecter les principes vus dans vos cours de conception objet durant votre formation. Les modalités de réalisation de certaines fonctionnalités ne sont pas forcément spécifiées afin de vous donner une certaine liberté dans la conception. En revanche, vous devez respecter les contraintes imposées dans le sujet et justifier tout choix qui les contredit.
 
-Le sujet complet du projet est accessible dans le fichier [Sujet.md](Sujet.md). Cliquez [https://classroom.github.com/g/-M5q3iEE](ici) pour forker le projet.
+Le sujet complet du projet est accessible dans le fichier [Sujet.md](Sujet.md). Cliquez [ici](https://classroom.github.com/g/-M5q3iEE) pour forker le projet.
