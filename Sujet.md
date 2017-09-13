@@ -23,7 +23,7 @@
 
 La note du projet prendra en compte :
 
--   Le respect des consignes du sujet et des [contraintes du livrable](ContraintesLivrable.md).
+-   Le respect des consignes du sujet et des [contraintes de réalisation](ContraintesRealisation.md).
 -   La modélisation objet de votre application. Également, nous serons
     particulièrement attentifs à l’utilisation appropriée des patrons de conception que vous aurez mis en œuvre
 -   La propreté et la lisibilité du code ainsi que tout ce qui
