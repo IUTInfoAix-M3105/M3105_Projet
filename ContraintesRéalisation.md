@@ -6,11 +6,10 @@ projet. L'évaluation prenant en compte ces consignes, vous devez impérativemen
 perdre des points bêtement.
 
 ## Contraintes de rendu pour le livrable final
-* Le rendu se fera à la fois sur votre dépot GitHub privé et sous forme d'une archive au format ZIP qui portera les noms de 
+* Le rendu se fera à la fois sur votre dépot GitHub privé. Ce dépôt portera les noms de 
 famille de chaque membre accolés par ordre alphabétique. Par exemple, si les noms sont Dupont, Martin, Durand et Cornet, 
-cette dernière s'appellera : `CornetDupontDurantMartin.zip`
-* Vous devez en plus fournir l'adresse du dépôt privé github de votre projet. Veillez à ce que votre enseignant ait bien 
-les droits de lecture sur votre projet. Attention à correctement nommer vos contributeurs pour que le correcteur puisse 
+cette dernière s'appellera : `CornetDupontDurantMartin_ProjetM3105`
+* Attention à correctement nommer vos contributeurs pour que le correcteur puisse 
 suivre individuellement les contributions des membres de votre équipe (Un exemple qui s'est déjà produit, le nom de 
 contributeur `Choucroute Garnie` n'apporte aucun renseignement vis-à-vis de la personne réelle qui a fait une contribution).
 * La construction ainsi que le cycle de vie du logiciel devront être gérés avec un outil dédié comme Maven. Un projet 
