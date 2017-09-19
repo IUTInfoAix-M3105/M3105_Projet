@@ -45,7 +45,7 @@ Pour simplifier la tâche, vous n'aurez pas à gérer les aspects temps réel de
 3. *Actionner le système* : les trains se déplacent d'une unité de temps.
 - le système mets à jour l'emplacement des trains dans le réseau
 - les trains arrivant en gare changent d'état et ne sont plus considérés en déplacement
-- détection des incidents et action correspondante
+- détection des incidents et action correspondante. Pour cela le système mets à jour le temps et vérifie si l'emplacement des trains corerspond à l'affectation des sillons
 4. *Affichage* : mise à jour des vues permettant d'afficher l'état actuel du système.
 
 Un utilisateur pourra simuler le fonctionnement du logiciel en déroulant étape après étape le scénario décrit ci-dessus.
@@ -59,8 +59,6 @@ Pour rendre le code plus compréhensible et simplifier la maintenance du projet,
 ## Mise en œuvre
 La mise en œuvre du projet passera par la réalisation des classes et méthodes décrites ci-dessous.
 
-### Gares
-
 ### Entreprises Ferroviaires
 Une `EntrepriseFrroviaire` est caractérisé par des attributs de base (nom, numéro SIREN, etc). De plus différents types de entreprises existent : `EntrepriseFrroviairePassagers`, `EntrepriseFrroviaireCargo`, `EntrepriseFrroviaireAnimaux`. D'autres spécialisations d'entreprises peuvent s'ajouter ultérieurement. L'attribution des sillons, la facturation peuvent dépendre du type d'entreprise ferroviaire et des `Trains` qu'elle utilise.
 
@@ -68,10 +66,7 @@ Une `EntrepriseFrroviaire` est caractérisé par des attributs de base (nom, num
 Un `Train` est décrit par le nombre de wagons, dimensions, le propriétaire (l'entreprise ferroviaire à laquelle il appartient). Plusieurs types de trains peuvent être distingués : de passagers, de marchandise, de transport de bétail, de transport de déchets. 
 
 ### Lignes Ferroviaires
-La création d'une `LigneFerroviaire` concrète devra être réalisée à travers un schéma bien établi. Chaque ligne est constituée de deux gares représentant ses extrémités.
-
-### Trajets
-Un `Trajet` est caractérisé par la compagnie ferroviaire qui le propose, la gare de départ et celle de destination.  Les lignes ferroviaires ???
+La création d'une `LigneFerroviaire` concrète devra être réalisée à travers un schéma bien établi. Chaque ligne est constituée de deux `Gares` représentant ses extrémités.
 
 ### Contrôleur
 Cette entité va permettre d'affecter des sillons à des trains suivant différents scénarios. Au moins trois scénarios devraient être intégrés :
