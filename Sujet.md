@@ -24,7 +24,7 @@ La note du projet prendra en compte :
 
 ### Instructions
 
--  Il est **strictement interdit de copier du code** des projets de vos collègues. Attention : l’obfuscation du code n’est pas une solution, c’est très facile à détecter !
+-  Il est **strictement interdit de copier du code** des projets de vos collègues. Attention : l’offuscation du code n’est pas une solution, c’est très facile à détecter !
 -  Vous pouvez aussi implémenter les bonus et/ou améliorations que vous aurez imaginés. Il est cependant conseillé de venir en parler avec votre enseignant afin d’en discuter. Dans tous les cas, il faut __d’abord implémenter__ les fonctionnalités demandées dans le sujet.
 
 Au cours de votre travail de conception et de réalisation, pensez à respecter les principes vus dans vos cours de conception objet durant votre formation.
@@ -32,9 +32,9 @@ Au cours de votre travail de conception et de réalisation, pensez à respecter 
 Les modalités de réalisation de certaines fonctionnalités ne sont pas forcément spécifiées afin de vous donner une certaine liberté dans la conception. En revanche, vous devez respecter les contraintes imposées dans le sujet et justifier tout choix qui les contredit.
 
 ## Descriptif
-Vous êtes chargé de réaliser le système de gestion du tout nouveau réseu ferré du pays : **HyperFrisette**. Le système est composé de gares reliées entre elles par des chemins fer. Le réseau est utilisé par diverses entreprises ferroviaires (FNCS, EFNER,...) qui, pour chaque passage de train, sont facturées comme il se doit ! Des lignes reliant deux gares permettent de découper le pays dans des axes principales, par exemple Paris-Marseille, Nice-Bordeaux, Marseille-Lille, etc. Pour simplifier une ligne ne comporte que deux gares : la gare de départ et la gare d'arrivée. L'utilisation d'une ligne a un coût. Ainsi, pour une compagnie ferroviaire dont le train traversera plusieurs lignes, on calculera le prix total à payer qui pourra éventuellement dépendre de plusieurs papermètres -- taille de train, fidélité, quantité d'autres trains de la même compagnie circulant dans le réseau, les subventions que les villes de certaines gares très excentrées pourraient fournir pour baisser les coûts de péages, etc. Plusieurs lignes sont déjà définies et naturellement, d'autres peuvent être créées à la demande de l'utilisateur.
+Vous êtes chargé de réaliser le système de gestion du tout nouveau réseau ferré du pays : **HyperFrisette**. Le système est composé de gares reliées entre elles par des chemins fer. Le réseau est utilisé par diverses entreprises ferroviaires (FNCS, EFNER,...) qui, pour chaque passage de train, sont facturées comme il se doit ! Des lignes reliant deux gares permettent de découper le pays dans des axes principales, par exemple Paris-Marseille, Nice-Bordeaux, Marseille-Lille, etc. Pour simplifier une ligne ne comporte que deux gares : la gare de départ et la gare d'arrivée. L'utilisation d'une ligne a un coût. Ainsi, pour une compagnie ferroviaire dont le train traversera plusieurs lignes, on calculera le prix total à payer qui pourra éventuellement dépendre de plusieurs paramètres -- taille de train, fidélité, quantité d'autres trains de la même compagnie circulant dans le réseau, les subventions que les villes de certaines gares très excentrées pourraient fournir pour baisser les coûts de péages, etc. Plusieurs lignes sont déjà définies et naturellement, d'autres peuvent être créées à la demande de l'utilisateur.
 
-Notez que les trains sont propriété des compagnies ferroviaires et pas du réseau ferré. Votre système devra donc gérer uniqument la circulation des trains dans le réseau et la facturation de ceux-ci. Notamment le système devra affecter des lignes à des trains sur des créneaux horaires de façon à éviter les conflits. Pour cela la notion de *sillon horaire* est introduite : c'est période durant laquelle une infrastructure donnée est affectée à la circulation d'un train entre deux points du réseau ferré. Pour vous faire une idée vous pouvez avoir des explications en détails [ici](https://www.sncf-reseau.fr/fr/que-sont-les-sillons) et [là](https://fr.wikipedia.org/wiki/Sillon_horaire). Dans notre cas, la notion de sillon est simplifiée. Vous allez considérer la même planification horaire pour tous les jours.
+Notez que les trains sont propriété des compagnies ferroviaires et pas du réseau ferré. Votre système devra donc gérer uniquement la circulation des trains dans le réseau et la facturation de ceux-ci. Notamment le système devra affecter des lignes à des trains sur des créneaux horaires de façon à éviter les conflits. Pour cela la notion de *sillon horaire* est introduite : c'est période durant laquelle une infrastructure donnée est affectée à la circulation d'un train entre deux points du réseau ferré. Pour vous faire une idée vous pouvez avoir des explications en détails [ici](https://www.sncf-reseau.fr/fr/que-sont-les-sillons) et [là](https://fr.wikipedia.org/wiki/Sillon_horaire). Dans notre cas, la notion de sillon est simplifiée. Vous allez considérer la même planification horaire pour tous les jours.
 
 ### Fonctionnement général de l'application
 
@@ -65,10 +65,10 @@ La mise en œuvre du projet passera par la réalisation des classes et méthodes
 Une `EntrepriseFrroviaire` est caractérisé par des attributs de base (nom, numéro SIREN, etc). De plus différents types de entreprises existent : `EntrepriseFrroviairePassagers`, `EntrepriseFrroviaireCargo`, `EntrepriseFrroviaireAnimaux`. D'autres spécialisations d'entreprises peuvent s'ajouter ultérieurement. L'attribution des sillons, la facturation peuvent dépendre du type d'entreprise ferroviaire et des `Trains` qu'elle utilise.
 
 ### Trains
-Un `Train` est décrit par le nombre de vagons, dimensions, le propriétaire (l'entreprise ferroviaire à laquelle il appartient). Plusieurs types de trains peuvent être distingués : de passagers, de marchandise, de transport de bétail, de transport de déchets. 
+Un `Train` est décrit par le nombre de wagons, dimensions, le propriétaire (l'entreprise ferroviaire à laquelle il appartient). Plusieurs types de trains peuvent être distingués : de passagers, de marchandise, de transport de bétail, de transport de déchets. 
 
 ### Lignes Ferroviaires
-La création d'une `LigneFerroviaire` concrete devra être réalisée à travers un schéma bien établi. Chaque ligne est constituée de deux gares représentant ses extremités.
+La création d'une `LigneFerroviaire` concrète devra être réalisée à travers un schéma bien établi. Chaque ligne est constituée de deux gares représentant ses extrémités.
 
 ### Trajets
 Un `Trajet` est caractérisé par la compagnie ferroviaire qui le propose, la gare de départ et celle de destination.  Les lignes ferroviaires ???
@@ -87,11 +87,11 @@ Vous implémenterez un ensemble de vues permettant de représenter et modifier l
 
 1. Une vue qui affiche l'ensemble du réseau à l'état actuel : les trains et leur situation dans le réseau, les gares
 
-2. Une vue qui affiche le paneau des temps d'arrivée estimés dans les gares
+2. Une vue qui affiche le panneau des temps d'arrivée estimés dans les gares
 
-3. Une vue qui affiche le paneau des temps de départ estimés dans les gares
+3. Une vue qui affiche le panneau des temps de départ estimés dans les gares
 
-4. Un paneau affichant les perturbations dans le réseau : retards, pannes dans les trains ou dans les gares
+4. Un panneau affichant les perturbations dans le réseau : retards, pannes dans les trains ou dans les gares
 
 Afin de ne pas retarder le travail, dans un premier temps, vos différentes vues seront représentées par des messages appropriés affichés dans le terminal.
 
