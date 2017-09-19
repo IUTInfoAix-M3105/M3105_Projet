@@ -69,11 +69,12 @@ Une `EntrepriseFrroviaire` est caractérisé par des attributs de base (nom, num
 Un `Train` est décrit par le nombre de vagons, dimensions, le propriétaire (l'entreprise ferroviaire à laquelle il appartient). Plusieurs types de trains peuvent être distingués : de passagers, de marchandise, de transport de bétail, de transport de déchets. 
 
 ### Lignes Ferroviaires
-La création d'une `LigneFerroviaire` concrete devra être réalisée à travers un schéma bien établi. Chaque ligne est constitué des gares, des tronçons. Deux gares représentent les deux extremités de la ligne.
+La création d'une `LigneFerroviaire` concrete devra être réalisée à travers un schéma bien établi. Chaque ligne est constituée des gares et des tronçons. Deux de ces gares représentent les extremités de la ligne.
 
 ### Tronçons
 
 ### Trajets
+Un `Trajet` est caractérisé par la compagnie ferroviaire qui le propose, la gare de départ et celle de destination.  Les lignes ferroviaires ???
 
 ### Contrôleur
 Cette entité va permettre d'affecter des sillons à des trains suivant différents scénarios. Au moins trois scénarios devraient être intégrés :
