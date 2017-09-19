@@ -62,11 +62,14 @@ La mise en œuvre du projet passera par la réalisation des classes et méthodes
 
 ### Gares
 
-### Trains
-
 ### Entreprises Ferroviaires
+Une `EntrepriseFrroviaire` est caractérisé par des attributs de base (nom, numéro SIREN, etc). De plus différents types de entreprises existent : `EntrepriseFrroviairePassagers`, `EntrepriseFrroviaireCargo`, `EntrepriseFrroviaireAnimaux`. D'autres spécialisations d'entreprises peuvent s'ajouter ultérieurement. L'attribution des sillons, la facturation peuvent dépendre du type d'entreprise ferroviaire et des `Trains` qu'elle utilise.
+
+### Trains
+Un `Train` est décrit par le nombre de vagons, dimensions, le propriétaire (l'entreprise ferroviaire à laquelle il appartient). Plusieurs types de trains peuvent être distingués : de passagers, de marchandise, de transport de bétail, de transport de déchets. 
 
 ### Lignes Ferroviaires
+La création d'une `LigneFerroviaire` concrete devra être réalisée à travers un schéma bien établi. Chaque ligne est constitué des gares, des tronçons. Deux gares représentent les deux extremités de la ligne.
 
 ### Tronçons
 
