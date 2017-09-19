@@ -76,9 +76,9 @@ Pour rendre le code plus compréhensible et simplifier la maintenance du projet,
     l’utilisateur (clics ou saisies au clavier).
 
 ## Mise en œuvre
-Vous êtes chargé de réaliser le système de gestion du tout nouveau réseu férré du pays : **HyperFrisette**. Le système est composé de gares reliées entre elles par des chemins fer. Le réseau est utilisé par diverses entreprises féroviaires (FNCS, EFNER,...) qui, pour chaque passage de train, sont facturées comme il se doit ! Des lignes reliant deux gares permettent de découper le pays dans des axes principales, par exemple Paris-Marseille, Nice-Bordeaux, Marseille-Lille, etc. À noter qu'une ligne peut contenir plusieurs gares sur sa trace. Une ligne est composée de plusieurs tronçons, délimités par des péages. Le passage d'un péage a un coût. Ainsi, pour une compagnie féroviaire dont le train traversera plusieurs péages, on calculera le prix total à payer qui pourra éventuellement dépendre de plusieurs papermètres -- taille de train, fidélité, quantité d'autres trains circulant dans le réseau, les subventions que les villes de certaines gares très excentrées pourraient fournir pour baisser les coûts de péages, etc. Plusieurs lignes sont déjà définies et naturellement, d'autres peuvent être créées à la demande de l'utilisateur.
+Vous êtes chargé de réaliser le système de gestion du tout nouveau réseu férré du pays : **HyperFrisette**. Le système est composé de gares reliées entre elles par des chemins fer. Le réseau est utilisé par diverses entreprises ferroviaires (FNCS, EFNER,...) qui, pour chaque passage de train, sont facturées comme il se doit ! Des lignes reliant deux gares permettent de découper le pays dans des axes principales, par exemple Paris-Marseille, Nice-Bordeaux, Marseille-Lille, etc. À noter qu'une ligne peut contenir plusieurs gares sur sa trace. Une ligne est composée de plusieurs tronçons, délimités par des péages. Le passage d'un péage a un coût. Ainsi, pour une compagnie ferroviaire dont le train traversera plusieurs péages, on calculera le prix total à payer qui pourra éventuellement dépendre de plusieurs papermètres -- taille de train, fidélité, quantité d'autres trains circulant dans le réseau, les subventions que les villes de certaines gares très excentrées pourraient fournir pour baisser les coûts de péages, etc. Plusieurs lignes sont déjà définies et naturellement, d'autres peuvent être créées à la demande de l'utilisateur.
 
-Notez, que les trains sont propriété des compagnies féroviaires, votre système devra juste gerer leur circulation dans le réseau. Notamment il devra affecter à des tronçons les trains circulant sur des lignes. Pour cela la notion de *sillon horaire* est introduite : c'est période durant laquelle une infrastructure donnée est affectée à la circulation d'un train entre deux points du réseau ferré. Pour vous faire une idée vous pouvez avoir des explications en détails [ici] (https://www.sncf-reseau.fr/fr/que-sont-les-sillons) et [là] (https://fr.wikipedia.org/wiki/Sillon_horaire).
+Notez, que les trains sont propriété des compagnies ferroviaires, votre système devra juste gérer leur circulation dans le réseau. Notamment il devra affecter à des tronçons les trains circulant sur des lignes. Pour cela la notion de *sillon horaire* est introduite : c'est période durant laquelle une infrastructure donnée est affectée à la circulation d'un train entre deux points du réseau ferré. Pour vous faire une idée vous pouvez avoir des explications en détails [ici](https://www.sncf-reseau.fr/fr/que-sont-les-sillons) et [là](https://fr.wikipedia.org/wiki/Sillon_horaire).
 
 La mise en œuvre du projet passera par la réalisation des classes et méthodes décrites ci-dessous.
 
@@ -95,7 +95,11 @@ La mise en œuvre du projet passera par la réalisation des classes et méthodes
 ### Trajets
 
 ### Contrôleur
-Le sillon est le produit que nous vendons à nos clients pour leur permettre de faire circuler un train d’un point à un autre du réseau à un moment donné. Cette entité va permettre d'affecter des sillons à des trains suivant différents scénarios.
+Cette entité va permettre d'affecter des sillons à des trains suivant différents scénarios. Au moins trois scénarios devraient être intégrés :
+
+- attribution suivant un algorithme glouton : le premier sillon disponible est attribué
+- minimisation du prix pour la compagnie ferroviaire en attribuant les sillons les moins coûteux
+- minimisation du temps de trajet
 
 ### Visualisation du système – mode simplifié
 
