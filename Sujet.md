@@ -78,7 +78,7 @@ Pour rendre le code plus compréhensible et simplifier la maintenance du projet,
 ## Mise en œuvre
 Vous êtes chargé de réaliser le système de gestion du tout nouveau réseu férré du pays : **HyperFrisette**. Le système est composé des gares reliées entre elles par des chemins fer. Le réseau est utilisé par diverses entreprises féroviaires (FNCS, EFNER,...) qui, pour chaque passage de train, sont facturées comme il se doit ! Des lignes reliant deux gares permettent de découper le pays dans des axes principales, par exemple Paris-Marseille, Nice-Bordeaux, Marseille-Lille, etc. À noter qu'une ligne peut contenir plusieurs gares sur sa trace. Une ligne est composée de plusieurs tronçons, délimités par des péages. Le passage d'un péage a un coût. Ainsi, pour une compagnie féroviaire dont le train traversera plusieurs péages, on calculera le prix total à payer qui pourra éventuellement dépendre de plusieurs papermètres -- taille de train, fidélité, quantité d'autres trains circulant dans le réseau, les subventions que les villes de certaines gares très excentrées pourraient fournir pour baisser les coûts de péages, etc. Plusieurs lignes sont déjà définies et naturellement, d'autres peuvent être créées à la demande de l'utilisateur.
 
-Notez, que les trains sont propriété des compagnies féroviaires, votre système devra juste gerer leur circulation dans le réseau.
+Notez, que les trains sont propriété des compagnies féroviaires, votre système devra juste gerer leur circulation dans le réseau. Notamment il devra affecter à des tronçons les trains circulant sur des lignes.
 
 La mise en œuvre du projet passera par la réalisation des classes et méthodes décrites ci-dessous.
 
