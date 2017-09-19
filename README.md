@@ -1,8 +1,9 @@
-Conception et Programmation Objets Avancées [![Build Status](https://travis-ci.org/IUTInfoAix/M3105_Projet.svg?branch=master)](https://travis-ci.org/IUTInfoAix/M3105_Projet)
+## Conception et Programmation Objets Avancées
+[![Build Status](https://travis-ci.org/IUTInfoAix/M3105_Projet.svg?branch=master)](https://travis-ci.org/IUTInfoAix/M3105_Projet)
 
 
 
-### IUT d’Aix-Marseille – Département Informatique Aix-en-Provence, Semestre 3 – Année 2017-2018
+#### IUT d’Aix-Marseille – Département Informatique Aix-en-Provence, Semestre 3 – Année 2017-2018
 
 * Sophie Nabitz - [sophie.nabitz@univ-avignon.fr](sophie.nabitz@univ-avignon.fr)
 * Sébastien Nedjar - [sebastien.nedjar@univ-amu.fr](sebastien.nedjar@univ-amu.fr)
