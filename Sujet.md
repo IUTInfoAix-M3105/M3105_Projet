@@ -76,7 +76,7 @@ Pour rendre le code plus compréhensible et simplifier la maintenance du projet,
     l’utilisateur (clics ou saisies au clavier).
 
 ## Mise en œuvre
-Vous êtes chargé de réaliser le système de gestion du tout nouveau réseu férré du pays : **HyperFrisette**. Le système est composé des gares reliées entre elles par des chemins fer. Le réseau est utilisé par diverses entreprises féroviaires (FNCS, EFNER,...) qui, pour chaque passage de train, sont facturées comme il se doit ! Des lignes reliant deux gares permettent de découper le pays dans des axes principales, par exemple Paris-Marseille, Nice-Bordeaux, Marseille-Lille, etc. À noter qu'une ligne peut contenir plusieurs gares sur sa trace. Une ligne est composée de plusieurs tronçons, délimités par des péages. Le passage d'un péage a un coût. Ainsi, pour une compagnie féroviaire dont le train traversera plusieurs péages, on calculera le prix total à payer qui pourra éventuellement dépendre de plusieurs papermètres -- taille de train, fidélité, quantité d'autres trains circulant dans le réseau, les subventions que les villes de certaines gares très excentrées pourraient fournir pour baisser les coûts de péages, etc. Plusieurs lignes sont déjà définies et naturellement, d'autres peuvent être créées à la demande de l'utilisateur.
+Vous êtes chargé de réaliser le système de gestion du tout nouveau réseu férré du pays : **HyperFrisette**. Le système est composé de gares reliées entre elles par des chemins fer. Le réseau est utilisé par diverses entreprises féroviaires (FNCS, EFNER,...) qui, pour chaque passage de train, sont facturées comme il se doit ! Des lignes reliant deux gares permettent de découper le pays dans des axes principales, par exemple Paris-Marseille, Nice-Bordeaux, Marseille-Lille, etc. À noter qu'une ligne peut contenir plusieurs gares sur sa trace. Une ligne est composée de plusieurs tronçons, délimités par des péages. Le passage d'un péage a un coût. Ainsi, pour une compagnie féroviaire dont le train traversera plusieurs péages, on calculera le prix total à payer qui pourra éventuellement dépendre de plusieurs papermètres -- taille de train, fidélité, quantité d'autres trains circulant dans le réseau, les subventions que les villes de certaines gares très excentrées pourraient fournir pour baisser les coûts de péages, etc. Plusieurs lignes sont déjà définies et naturellement, d'autres peuvent être créées à la demande de l'utilisateur.
 
 Notez, que les trains sont propriété des compagnies féroviaires, votre système devra juste gerer leur circulation dans le réseau. Notamment il devra affecter à des tronçons les trains circulant sur des lignes.
 
@@ -101,11 +101,13 @@ La mise en œuvre du projet passera par la réalisation des classes et méthodes
 
 Vous implémenterez un ensemble de vues permettant de représenter et modifier l'état interne du système. Votre programme devra en particulier intégrer les vues suivantes :
 
-1.  Une vue qui affiche l'ensemble du réseau à l'état actuel (les trains 
+1.  Une vue qui affiche l'ensemble du réseau à l'état actuel : les trains et leur situation dans le réseau, les gares
 
 2.  Une vue qui affiche le paneau des temps d'arrivée estimés dans les gares
 
-3.  Un paneau affichant les perturbations dans le réseau : retards, pannes dans les trains ou dans les gares
+3. Une vue qui affiche le paneau des temps de départ estimés dans les gares
+
+4.  Un paneau affichant les perturbations dans le réseau : retards, pannes dans les trains ou dans les gares
 
 Afin de ne pas retarder le travail, dans un premier temps, vos différentes vues seront représentées par des messages appropriés affichés dans le terminal.
 
