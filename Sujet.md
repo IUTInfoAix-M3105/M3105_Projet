@@ -56,11 +56,18 @@ Les modalités de réalisation de certaines fonctionnalités ne sont pas forcém
 
 ### Fonctionnement général de l'application
 
-La simulation du passage du temps dans votre système se fera par des itérations actionnées par l'utilisateur de l'application. 
-Chaque itération est composée des étapes suivantes qui devront être réalisée séquentiellement :
+Pour simplifier la tâche, vous n'aurez pas à gérer les aspects temps réel de l'application. La simulation du passage du temps dans votre système se fera par des itérations actionnées par l'utilisateur de l'application. Chaque itération est composée des étapes suivantes qui devront être réalisée séquentiellement :
 
+1. *Demandes de trajets, déclaration d'incidents* : chaque compagnie ferroviaire a la possibilité de demander des trajets.
+2. *Validation* : le contrôleur valide chaque trajet en proposant des sillons
+3. *Actionner le système* : les trains se déplacent d'une unité de temps.
+- le système mets à jour l'emplacement des trains dans le réseau
+- les trains arrivant en gare changent d'état et ne sont plus considérés en déplacement
+- détection des incidents et action correspondante
+4. *Affichage* : mise à jour des vues permettant d'afficher l'état actuel du système.
 
 Un utilisateur pourra simuler le fonctionnement du logiciel en déroulant étape après étape le scénario décrit ci-dessus.
+
 
 Pour rendre le code plus compréhensible et simplifier la maintenance du projet, les parties «*traitement*» et la partie «*affichage*» seront séparées.
 
@@ -79,21 +86,6 @@ Pour rendre le code plus compréhensible et simplifier la maintenance du projet,
 Vous êtes chargé de réaliser le système de gestion du tout nouveau réseu férré du pays : **HyperFrisette**. Le système est composé de gares reliées entre elles par des chemins fer. Le réseau est utilisé par diverses entreprises ferroviaires (FNCS, EFNER,...) qui, pour chaque passage de train, sont facturées comme il se doit ! Des lignes reliant deux gares permettent de découper le pays dans des axes principales, par exemple Paris-Marseille, Nice-Bordeaux, Marseille-Lille, etc. À noter qu'une ligne peut contenir plusieurs gares sur sa trace. Une ligne est composée de plusieurs tronçons, délimités par des péages. Le passage d'un péage a un coût. Ainsi, pour une compagnie ferroviaire dont le train traversera plusieurs péages, on calculera le prix total à payer qui pourra éventuellement dépendre de plusieurs papermètres -- taille de train, fidélité, quantité d'autres trains circulant dans le réseau, les subventions que les villes de certaines gares très excentrées pourraient fournir pour baisser les coûts de péages, etc. Plusieurs lignes sont déjà définies et naturellement, d'autres peuvent être créées à la demande de l'utilisateur.
 
 Notez, que les trains sont propriété des compagnies ferroviaires, votre système devra juste gérer leur circulation dans le réseau. Notamment il devra affecter à des tronçons les trains circulant sur des lignes. Pour cela la notion de *sillon horaire* est introduite : c'est période durant laquelle une infrastructure donnée est affectée à la circulation d'un train entre deux points du réseau ferré. Pour vous faire une idée vous pouvez avoir des explications en détails [ici](https://www.sncf-reseau.fr/fr/que-sont-les-sillons) et [là](https://fr.wikipedia.org/wiki/Sillon_horaire).
-
-
-### Fonctionnement général de l'application
-
-Pour simplifier la tâche, vous n'aurez pas à gérer les aspects temps réel de l'application. La simulation du passage du temps dans votre système se fera par des itérations actionnées par l'utilisateur de l'application. Chaque itération est composée des étapes suivantes qui devront être réalisée séquentiellement :
-
-1. *Demandes de trajets, déclaration d'incidents* : chaque compagnie ferroviaire a la possibilité de demander des trajets.
-2. *Validation* : le contrôleur valide chaque trajet en proposant des sillons
-3. *Actionner le système* : les trains se déplacent d'une unité de temps.
-- le système mets à jour l'emplacement des trains dans le réseau
-- les trains arrivant en gare changent d'état et ne sont plus considérés en déplacement
-- détection des incidents et action correspondante
-4. *Affichage* : mise à jour des vues permettant d'afficher l'état actuel du système.
-
-Un utilisateur pourra simuler le fonctionnement du logiciel en déroulant étape après étape le scénario décrit ci-dessus.
 
 
 La mise en œuvre du projet passera par la réalisation des classes et méthodes décrites ci-dessous.
