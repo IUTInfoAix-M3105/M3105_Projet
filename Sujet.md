@@ -3,7 +3,7 @@
 **Date de rendu : 20 novembre 2017 à 23h59**  
 **Date de soutenance : 23 novembre 2017**
 
-*Le non-respect d’une des consignes ci-dessous impliquera une pénalité de 3 points minimum sur la note du projet. Les modalités pour la soutenance seront précisées ultérieurement.*
+*Le non-respect d’une des consignes ci-dessous impliquera une pénalité de 3 points minimum sur la note du projet.*
 
 ### Généralités
 -  Vous travaillerez par équipe de 5 personnes et de manière collaborative en utilisant Git et en partageant le travail entre les membres de l'équipe sur GitHub.
@@ -50,12 +50,11 @@ Pour simplifier la tâche, vous n'aurez pas à gérer les aspects temps réel de
 
 Un utilisateur pourra simuler le fonctionnement du logiciel en déroulant étape après étape le scénario décrit ci-dessus.
 
-
 Pour rendre le code plus compréhensible et simplifier la maintenance du projet, les parties «*traitement*» et la partie «*affichage*» seront séparées.
 
-- La couche *traitement* (package «`reseauferre.traitement`») : toutes les données et les traitements spécifiques (ex: ajouter des tronçons ferroviaires, ajouter des gares, ajouter des trains etc.) sont regroupés dans ce package. Les classes de cette couche ne concernent pas la partie graphique. Elles se contentent principalement d’effectuer des traitements métiers et de renvoyer des résultats.
+- La couche *traitement* du package «`reseauferre.traitement`» : toutes les données et les traitements spécifiques (ex: ajouter des tronçons ferroviaires, ajouter des gares, ajouter des trains etc.) sont regroupés dans ce package. Les classes de cette couche ne concernent pas la partie graphique. Elles se contentent principalement d’effectuer des traitements métiers et de renvoyer des résultats.
 
--  La couche *graphique* (package «`reseauferre.affichage`»): cette couche gère l'affichage (interface utilisateur) et les actions de l’utilisateur (clics ou saisies au clavier).
+-  La couche *graphique* du package «`reseauferre.affichage`» : cette couche gère l'affichage (interface utilisateur) et les actions de l’utilisateur (clics ou saisies au clavier).
 
 ## Mise en œuvre
 La mise en œuvre du projet passera par la réalisation des classes et méthodes décrites ci-dessous.
@@ -82,7 +81,6 @@ Cette entité va permettre d'affecter des sillons à des trains suivant différe
 - minimisation du prix pour la compagnie ferroviaire en attribuant les sillons les moins coûteux
 - minimisation du temps de trajet
 D'autres scénarios pourront être ajoutés ultérieurement. Le choix du scénario sera fait par l'utilisateur.
-
 
 
 ### Visualisation du système – mode simplifié
