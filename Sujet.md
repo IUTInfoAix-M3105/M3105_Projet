@@ -6,8 +6,8 @@
 *Le non-respect d’une des consignes ci-dessous impliquera une pénalité de 3 points minimum sur la note du projet. Les modalités pour la soutenance seront précisées ultérieurement.*
 
 ### Généralités
--   Vous travaillerez par équipe de 5 personnes et de manière collaborative en utilisant Git et en partageant le travail entre les membres de l'équipe sur GitHub.
--   Chaque membre de l'équipe fera des comits du code qu'il a écrit. L'équipe enseignante va en tenir compte lors de l'évaluation.
+-  Vous travaillerez par équipe de 5 personnes et de manière collaborative en utilisant Git et en partageant le travail entre les membres de l'équipe sur GitHub.
+-  Chaque membre de l'équipe fera des comits du code qu'il a écrit. L'équipe enseignante va en tenir compte lors de l'évaluation.
 -  Le dépôt du projet de votre équipe devra être __privé__ (accessible uniquement par les membres de l'équipe).
 -  Attention aux [modalités de déroulement des soutenances](ModalitesSoutenance.md) !
 
@@ -15,29 +15,17 @@
 
 La note du projet prendra en compte :
 
--   Le respect des consignes du sujet et des [contraintes de réalisation](ContraintesRealisation.md).
--   La modélisation objet de votre application. Également, nous serons
-    particulièrement attentifs à l’utilisation appropriée des patrons de conception que vous aurez mis en œuvre
--   La propreté et la lisibilité du code ainsi que tout ce qui
-    facilitera sa compréhension par les correcteurs (noms des variables,
-    commentaires, modularité, etc ).
--   La facilité d'utilisation du code (le fichier INSTALL/README est-il
-    lisible et suffit-il pour utiliser le code ?). La compilation de
-    votre code devrait marcher sur tout type de machine - pensez à
-    tester avant le rendu final.
--   La correction et la cohérence du code.
--   La présentation de votre application durant la soutenance.
+-  Le respect des consignes du sujet et des [contraintes de réalisation](ContraintesRealisation.md).
+-  La modélisation objet de votre application. Les correcteurs seront particulièrement attentifs à l’utilisation appropriée des patrons de conception que vous aurez mis en œuvre
+-  La propreté et la lisibilité du code ainsi que tout ce qui facilitera sa compréhension par les correcteurs (noms des variables, commentaires, modularité, etc ).
+-  La facilité d'utilisation du code (le fichier INSTALL/README est-il lisible et suffit-il pour utiliser le code ?). La compilation de votre code devrait marcher sur tout type de machine - pensez à tester avant le rendu final.
+-  La correction et la cohérence du code.
+-  La présentation de votre application durant la soutenance.
 
 ### Instructions
 
--   Il est **strictement interdit de copier du code** des projets de
-    vos collègues. Attention : l’obfuscation du code n’est pas une
-    solution, c’est très facile à détecter !
--   Vous pouvez aussi implémenter les bonus et/ou améliorations que vous
-    aurez imaginés. Il est cependant conseillé de venir en parler avec
-    votre enseignant de projet afin d’en discuter. Dans tous les cas, il
-    faut __d’abord implémenter__ les fonctionnalités demandées dans
-    le sujet.
+-  Il est **strictement interdit de copier du code** des projets de vos collègues. Attention : l’obfuscation du code n’est pas une solution, c’est très facile à détecter !
+-  Vous pouvez aussi implémenter les bonus et/ou améliorations que vous aurez imaginés. Il est cependant conseillé de venir en parler avec votre enseignant afin d’en discuter. Dans tous les cas, il faut __d’abord implémenter__ les fonctionnalités demandées dans le sujet.
 
 Au cours de votre travail de conception et de réalisation, pensez à respecter les principes vus dans vos cours de conception objet durant votre formation.
 
@@ -65,16 +53,9 @@ Un utilisateur pourra simuler le fonctionnement du logiciel en déroulant étape
 
 Pour rendre le code plus compréhensible et simplifier la maintenance du projet, les parties «*traitement*» et la partie «*affichage*» seront séparées.
 
--   La couche *traitement* (package «`reseauferre.traitement`») :
-    toutes les données et les traitements spécifiques (ex: ajouter des
-    tronçons ferroviaires, ajouter des gares, ajouter des trains etc.) sont regroupés
-    dans ce package. Les classes de cette couche ne concernent pas la
-    partie graphique. Elles se contentent principalement d’effectuer des
-    traitements métiers et de renvoyer des résultats.
+- La couche *traitement* (package «`reseauferre.traitement`») : toutes les données et les traitements spécifiques (ex: ajouter des tronçons ferroviaires, ajouter des gares, ajouter des trains etc.) sont regroupés dans ce package. Les classes de cette couche ne concernent pas la partie graphique. Elles se contentent principalement d’effectuer des traitements métiers et de renvoyer des résultats.
 
--   La couche *graphique* (package «`reseauferre.affichage`»): cette
-    couche gère l'affichage (interface utilisateur) et les actions de
-    l’utilisateur (clics ou saisies au clavier).
+-  La couche *graphique* (package «`reseauferre.affichage`»): cette couche gère l'affichage (interface utilisateur) et les actions de l’utilisateur (clics ou saisies au clavier).
 
 ## Mise en œuvre
 La mise en œuvre du projet passera par la réalisation des classes et méthodes décrites ci-dessous.
