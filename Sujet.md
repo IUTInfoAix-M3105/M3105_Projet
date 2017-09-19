@@ -108,3 +108,18 @@ Réalisez une interface graphique incluant les éléments suivants :
 -   Un menu d'application incluant : paramètres, documentation, à propos de, quitter l'application, etc.
 
 -   La gestion des erreurs d'affichage.
+
+## Grandes phases du projet
+Pour réaliser ce projet, vous allez devoir découper votre travail en unité fonctionnelle plus simple. 
+Votre devrait faire apparaître les jalons suivants :
+1. Modélisation de l'univers métier (Gare, Ligne, Wagon, Train, ...)
+
+2. Gestion de la planification/affectation des créneaux horaires et des sillons.
+
+3. Calcul des coûts de péage et Facturation 
+
+4. Simulation de l'évolution du système (déplacement des trains)
+
+5. Visualisation de l'état du système
+
+Pour repérer chacun de ces jalons dans l'historique de votre projet, vous pouvez créer une [*release*](https://help.github.com/articles/creating-releases/) sur Github.
