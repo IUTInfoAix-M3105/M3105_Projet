@@ -80,6 +80,22 @@ Vous êtes chargé de réaliser le système de gestion du tout nouveau réseu f�
 
 Notez, que les trains sont propriété des compagnies ferroviaires, votre système devra juste gérer leur circulation dans le réseau. Notamment il devra affecter à des tronçons les trains circulant sur des lignes. Pour cela la notion de *sillon horaire* est introduite : c'est période durant laquelle une infrastructure donnée est affectée à la circulation d'un train entre deux points du réseau ferré. Pour vous faire une idée vous pouvez avoir des explications en détails [ici](https://www.sncf-reseau.fr/fr/que-sont-les-sillons) et [là](https://fr.wikipedia.org/wiki/Sillon_horaire).
 
+
+### Fonctionnement général de l'application
+
+Pour simplifier la tâche, vous n'aurez pas à gérer les aspects temps réel de l'application. La simulation du passage du temps dans votre système se fera par des itérations actionnées par l'utilisateur de l'application. Chaque itération est composée des étapes suivantes qui devront être réalisée séquentiellement :
+
+1. *Demandes de trajets, déclaration d'incidents* : chaque compagnie ferroviaire a la possibilité de demander des trajets.
+2. *Validation* : le contrôleur valide chaque trajet en proposant des sillons
+3. *Actionner le système* : les trains se déplacent d'une unité de temps.
+- le système mets à jour l'emplacement des trains dans le réseau
+- les trains arrivant en gare changent d'état et ne sont plus considérés en déplacement
+- détection des incidents et action correspondante
+4. *Affichage* : mise à jour des vues permettant d'afficher l'état actuel du système.
+
+Un utilisateur pourra simuler le fonctionnement du logiciel en déroulant étape après étape le scénario décrit ci-dessus.
+
+
 La mise en œuvre du projet passera par la réalisation des classes et méthodes décrites ci-dessous.
 
 ### Gares
@@ -96,22 +112,24 @@ La mise en œuvre du projet passera par la réalisation des classes et méthodes
 
 ### Contrôleur
 Cette entité va permettre d'affecter des sillons à des trains suivant différents scénarios. Au moins trois scénarios devraient être intégrés :
-
 - attribution suivant un algorithme glouton : le premier sillon disponible est attribué
 - minimisation du prix pour la compagnie ferroviaire en attribuant les sillons les moins coûteux
 - minimisation du temps de trajet
+D'autres scénarios pourront être ajoutés ultérieurement. Le choix du scénario sera fait par l'utilisateur.
+
+
 
 ### Visualisation du système – mode simplifié
 
 Vous implémenterez un ensemble de vues permettant de représenter et modifier l'état interne du système. Votre programme devra en particulier intégrer les vues suivantes :
 
-1.  Une vue qui affiche l'ensemble du réseau à l'état actuel : les trains et leur situation dans le réseau, les gares
+1. Une vue qui affiche l'ensemble du réseau à l'état actuel : les trains et leur situation dans le réseau, les gares
 
-2.  Une vue qui affiche le paneau des temps d'arrivée estimés dans les gares
+2. Une vue qui affiche le paneau des temps d'arrivée estimés dans les gares
 
 3. Une vue qui affiche le paneau des temps de départ estimés dans les gares
 
-4.  Un paneau affichant les perturbations dans le réseau : retards, pannes dans les trains ou dans les gares
+4. Un paneau affichant les perturbations dans le réseau : retards, pannes dans les trains ou dans les gares
 
 Afin de ne pas retarder le travail, dans un premier temps, vos différentes vues seront représentées par des messages appropriés affichés dans le terminal.
 
