@@ -1,13 +1,5 @@
 # Simulateur d'un réseau ferroviaire - HyperFrisette
 
-
-### Conception et Programmation Objets Avancées (module M3105)
-### IUT d’Aix-Marseille – Dép. Informatique Aix-en-Provence, Semestre 3 – Année 2017-2018
-
-* Sophie Nabitz - [sophie.nabitz@univ-avignon.fr](sophie.nabitz@univ-avignon.fr) - https://github.com/bastinz
-* Sébastien Nedjar - [sebastien.nedjar@univ-amu.fr](sebastien.nedjar@univ-amu.fr) - https://github.com/nedseb
-* Petru Valicov - [petru.valicov@univ-amu.fr](petru.valicov@univ-amu.fr) - https://github.com/pvalicov
-
 **Date de rendu : 20 novembre 2017 à 23h59**  
 **Date de soutenance : 23 novembre 2017**
 
