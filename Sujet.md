@@ -7,7 +7,7 @@
 
 ### Généralités
 -  Vous travaillerez par équipe de 5 personnes et de manière collaborative en utilisant Git et en partageant le travail entre les membres de l'équipe sur GitHub.
--  Chaque membre de l'équipe fera des comits du code qu'il a écrit. L'équipe enseignante va en tenir compte lors de l'évaluation.
+-  Chaque membre de l'équipe fera des commits du code qu'il a écrit. L'équipe enseignante va en tenir compte lors de l'évaluation.
 -  Le dépôt du projet de votre équipe devra être __privé__ (accessible uniquement par les membres de l'équipe).
 -  Attention aux [modalités de déroulement des soutenances](ModalitesSoutenance.md) !
 
