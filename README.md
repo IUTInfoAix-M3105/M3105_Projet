@@ -1,5 +1,5 @@
 ## Conception et Programmation Objets Avancées
-[![Build Status](https://travis-ci.org/IUTInfoAix/M3105_Projet.svg?branch=master)](https://travis-ci.org/IUTInfoAix/M3105_Projet)
+[![Build Status](https://travis-ci.com/IUTInfoAix-M3105/M3105_Projet.svg?branch=master)](https://travis-ci.com/IUTInfoAix-M3105/M3105_Projet)
 
 
 
