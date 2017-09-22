@@ -16,4 +16,4 @@
 
 Au cours de votre travail de conception et de réalisation, pensez à respecter les principes vus dans vos cours de conception objet durant votre formation. Les modalités de réalisation de certaines fonctionnalités ne sont pas forcément spécifiées afin de vous donner une certaine liberté dans la conception. En revanche, vous devez respecter les contraintes imposées dans le sujet et justifier tout choix qui les contredit.
 
-Le sujet complet du projet est accessible dans le fichier [Sujet.md](Sujet.md). Cliquez [ici](https://classroom.github.com/g/-M5q3iEE) pour forker le projet. La structure du projet a été déjà créée pour vous dans le répertoire src, que vous pourrez importer dans un projet Maven.
+Le sujet complet du projet est accessible dans le fichier [Sujet.md](Sujet.md). Cliquez [ici](https://classroom.github.com/g/-M5q3iEE) pour forker le projet. La structure du projet a été déjà créée pour vous dans le répertoire `src`, que vous pourrez importer dans un projet Maven.
