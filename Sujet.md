@@ -7,7 +7,7 @@
 
 ### Généralités
 -  Vous travaillerez par équipe de 5 personnes et de manière collaborative en utilisant Git et en partageant le travail entre les membres de l'équipe sur GitHub.
--  Chaque membre de l'équipe fera des commits du code qu'il a écrit. L'équipe enseignante va en tenir compte lors de l'évaluation.
+-  Chaque membre de l'équipe fera des comits du code qu'il a écrit. L'équipe enseignante va en tenir compte lors de l'évaluation.
 -  Le dépôt du projet de votre équipe devra être __privé__ (accessible uniquement par les membres de l'équipe).
 -  Attention aux [modalités de déroulement des soutenances](ModalitesSoutenance.md) !
 
@@ -35,9 +35,9 @@ Les modalités de réalisation de certaines fonctionnalités ne sont pas forcém
 
 ### Description du contexte
 
-Vous êtes chargé de réaliser le système de gestion du tout nouveau réseau ferré du pays : **HyperFrisette**. Le système est composé de gares reliées entre elles par des chemins fer. Le réseau est utilisé par diverses entreprises ferroviaires (FNCS, EFNER,...) qui, pour chaque passage de train, sont facturées comme il se doit ! Des lignes reliant deux gares permettent de découper le pays dans des axes principales, par exemple Paris-Marseille, Nice-Bordeaux, Marseille-Lille, etc. Pour simplifier une ligne ne comporte que deux gares : la gare de départ et la gare d'arrivée. L'utilisation d'une ligne a un coût. Ainsi, pour une compagnie ferroviaire dont le train traversera plusieurs lignes, on calculera le prix total à payer qui pourra éventuellement dépendre de plusieurs paramètres -- taille de train, fidélité, quantité d'autres trains de la même compagnie circulant dans le réseau, les subventions que les villes de certaines gares très excentrées pourraient fournir pour baisser les coûts de péages, etc. Plusieurs lignes sont déjà définies et naturellement, d'autres peuvent être créées à la demande de l'utilisateur.
+Vous êtes chargé de réaliser le système de gestion du tout nouveau réseau de trains sur coussin d'air du pays : **HyperFrisette**. Le système est composé de gares reliées entre elles par des chemins fer. Le réseau est utilisé par diverses entreprises ferroviaires (FNCS, EFNER,...) qui, pour chaque passage de train, sont facturées comme il se doit ! Des lignes reliant deux gares permettent de découper le pays dans des axes principales, par exemple Paris-Marseille, Nice-Bordeaux, Marseille-Lille, etc. Pour simplifier une ligne ne comporte que deux gares : la gare de départ et la gare d'arrivée. L'utilisation d'une ligne a un coût. Ainsi, pour une compagnie ferroviaire dont le train traversera plusieurs lignes, on calculera le prix total à payer qui pourra éventuellement dépendre de plusieurs paramètres -- taille de train, fidélité, quantité d'autres trains de la même compagnie circulant dans le réseau, les subventions que les villes de certaines gares très excentrées pourraient fournir pour baisser les coûts de péages, etc. Plusieurs lignes sont déjà définies et naturellement, d'autres peuvent être créées à la demande de l'utilisateur.
 
-Notez que les trains sont propriété des compagnies ferroviaires et pas du réseau ferré. Votre système devra donc gérer uniquement la circulation des trains dans le réseau et la facturation de ceux-ci. Notamment le système devra affecter des lignes à des trains sur des créneaux horaires de façon à éviter les conflits. Pour cela la notion de *sillon horaire* est introduite : c'est période durant laquelle une infrastructure donnée est affectée à la circulation d'un train entre deux points du réseau ferré. Pour vous faire une idée vous pouvez avoir des explications en détails [ici](https://www.sncf-reseau.fr/fr/que-sont-les-sillons) et [là](https://fr.wikipedia.org/wiki/Sillon_horaire). Dans notre cas, la notion de sillon est simplifiée. Vous allez considérer la même planification horaire pour tous les jours. Par exemple si pour le trajet Paris-Marseille le sillon 10h-13h est réservé, aucun train ne circulera sur la ligne Paris-Marseille durant ce créneau et c'est valable pour chaque jour de la semaine.
+Notez que les trains sont propriété des compagnies ferroviaires et pas du réseau ferré. Votre système devra donc gérer uniquement la circulation des trains dans le réseau et la facturation de ceux-ci. Notamment le système devra affecter des lignes à des trains sur des créneaux horaires de façon à éviter les conflits. Pour cela la notion de *sillon horaire* est introduite : c'est période durant laquelle une infrastructure donnée est affectée à la circulation d'un train entre deux points du réseau ferré. Pour vous faire une idée vous pouvez avoir des explications en détails [ici](https://www.sncf-reseau.fr/fr/que-sont-les-sillons) et [là](https://fr.wikipedia.org/wiki/Sillon_horaire). Dans notre cas, la notion de sillon est simplifiée. Vous allez considérer la même planification horaire pour tous les jours. Par exemple si pour le trajet Paris-Marseille le sillon 10h-11h est réservé, aucun train ne circulera sur la ligne Paris-Marseille durant ce créneau et c'est valable pour chaque jour de la semaine. D'autre part, vu que les trains utilisant **HyperFrisette** sont à sustentatation à coussins d'air, ils sont très rapides, ce qui simplifie la tâche : les créneaux horaires des sillons sont les mêmes (d'une heure) pour toutes les lignes de la France.
 
 ### Fonctionnement général de l'application
 
@@ -49,7 +49,7 @@ Pour simplifier la tâche, vous n'aurez pas à gérer les aspects temps réel de
 - le système mets à jour l'emplacement des trains dans le réseau
 - les trains arrivant en gare changent d'état et ne sont plus considérés en déplacement
 - détection des incidents et action correspondante. Pour cela le système mets à jour le temps et vérifie si l'emplacement des trains corerspond à l'affectation des sillons
-4. *Affichage* : mise à jour des vues permettant d'afficher l'état actuel du système.
+4. *Affichage* : mise à jour des vues permettant d'afficher l'état actuel du système, les facturations.
 
 Un utilisateur pourra simuler le fonctionnement du logiciel en déroulant étape après étape le scénario décrit ci-dessus.
 
@@ -94,7 +94,7 @@ Cette entité va permettre d'affecter des sillons à des trains suivant différe
 - attribution suivant un algorithme glouton : le premier sillon disponible est attribué au premier trajet demandant l'utilisation de la ligne
 - minimisation du prix pour la compagnie ferroviaire en attribuant les sillons les moins coûteux
 - minimisation du temps de trajet
-D'autres scénarios pourront être ajoutés ultérieurement dans votre application. Le choix du scénario sera fait par l'utilisateur.
+D'autres scénarios pourront être ajoutés ultérieurement dans votre application. Le choix du scénario sera fait par l'utilisateur. Le contrôleur s'assure également que les règles sont respectées et que les trains circulent bien en conformités aux sillons qui leur ont été affectés.
 
 ### Modèle économique
 **HyperFrisette** gagne son pain en facturant les compagnies ferroviaires pour chaque passage de train sur une ligne. Les prix que chaque compagnie aura à payer pourra dépendre à la fois du type de trains, la vitesse maximale autorisée, du nombre et/ou tonnage des wagons des trains, des lignes ferroviaires et sillons réservés, de la fidelité de la compagnie ferroviaire, .... Le système de facturation est déjà assez complexe et avec le developpement du réseau, aura la tendance de se complexifier davantage. Il faudra donc prévoir un mécanisme flexible de gestion de la facturation qui pourra être adapté ou enrichi par l'utilisateur.
