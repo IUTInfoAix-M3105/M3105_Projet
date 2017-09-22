@@ -31,7 +31,10 @@ Au cours de votre travail de conception et de réalisation, pensez à respecter 
 
 Les modalités de réalisation de certaines fonctionnalités ne sont pas forcément spécifiées afin de vous donner une certaine liberté dans la conception. En revanche, vous devez respecter les contraintes imposées dans le sujet et justifier tout choix qui les contredit.
 
-## Descriptif
+## Présentation du projet
+
+### Description du contexte
+
 Vous êtes chargé de réaliser le système de gestion du tout nouveau réseau ferré du pays : **HyperFrisette**. Le système est composé de gares reliées entre elles par des chemins fer. Le réseau est utilisé par diverses entreprises ferroviaires (FNCS, EFNER,...) qui, pour chaque passage de train, sont facturées comme il se doit ! Des lignes reliant deux gares permettent de découper le pays dans des axes principales, par exemple Paris-Marseille, Nice-Bordeaux, Marseille-Lille, etc. Pour simplifier une ligne ne comporte que deux gares : la gare de départ et la gare d'arrivée. L'utilisation d'une ligne a un coût. Ainsi, pour une compagnie ferroviaire dont le train traversera plusieurs lignes, on calculera le prix total à payer qui pourra éventuellement dépendre de plusieurs paramètres -- taille de train, fidélité, quantité d'autres trains de la même compagnie circulant dans le réseau, les subventions que les villes de certaines gares très excentrées pourraient fournir pour baisser les coûts de péages, etc. Plusieurs lignes sont déjà définies et naturellement, d'autres peuvent être créées à la demande de l'utilisateur.
 
 Notez que les trains sont propriété des compagnies ferroviaires et pas du réseau ferré. Votre système devra donc gérer uniquement la circulation des trains dans le réseau et la facturation de ceux-ci. Notamment le système devra affecter des lignes à des trains sur des créneaux horaires de façon à éviter les conflits. Pour cela la notion de *sillon horaire* est introduite : c'est période durant laquelle une infrastructure donnée est affectée à la circulation d'un train entre deux points du réseau ferré. Pour vous faire une idée vous pouvez avoir des explications en détails [ici](https://www.sncf-reseau.fr/fr/que-sont-les-sillons) et [là](https://fr.wikipedia.org/wiki/Sillon_horaire). Dans notre cas, la notion de sillon est simplifiée. Vous allez considérer la même planification horaire pour tous les jours. Par exemple si pour le trajet Paris-Marseille le sillon 10h-13h est réservé, aucun train ne circulera sur la ligne Paris-Marseille durant ce créneau et c'est valable pour chaque jour de la semaine.
@@ -56,19 +59,22 @@ Pour rendre le code plus compréhensible et simplifier la maintenance du projet,
 
 -  La couche *graphique* du package «`reseauferre.affichage`» : cette couche gère l'affichage (interface utilisateur) et les actions de l’utilisateur (clics ou saisies au clavier).
 
-## Mise en œuvre
+## Éléments de mise en œuvre
+
+### Modélisation de l'univers métier
+
 La mise en œuvre du projet passera par la réalisation des classes et méthodes décrites ci-dessous.
 
-### Entreprises Ferroviaires
+#### Entreprises Ferroviaires
 Une `EntrepriseFrroviaire` est caractérisée par des attributs de base (nom, numéro SIREN, etc). De plus différents types de entreprises existent : `EntrepriseFrroviairePassagers`, `EntrepriseFrroviaireCargo`, `EntrepriseFrroviaireAnimaux`. D'autres spécialisations d'entreprises peuvent s'ajouter ultérieurement. L'attribution des sillons, la facturation peuvent dépendre du type d'entreprise ferroviaire et des `Trains` qu'elle utilise.
 
-### Trains
+#### Trains
 Un `Train` est décrit par ses dimensions, vitesse maximale, le propriétaire (l'entreprise ferroviaire à laquelle il appartient), les wagons qui le composent. Plusieurs types de trains peuvent être distingués : de passagers, de marchandise, de transport de bétail, de transport de déchets, etc.
 
-### Lignes Ferroviaires
+#### Lignes Ferroviaires
 La création d'une `LigneFerroviaire` concrète devra être réalisée à travers un schéma bien établi. Chaque ligne est constituée de deux `Gares` représentant ses extrémités.
 
-### Contrôleur
+#### Contrôleur
 Cette entité va permettre d'affecter des sillons à des trains suivant différents scénarios. Au moins trois scénarios devraient être intégrés :
 - attribution suivant un algorithme glouton : le premier sillon disponible est attribué au premier trajet demandant l'utilisation de la ligne
 - minimisation du prix pour la compagnie ferroviaire en attribuant les sillons les moins coûteux
