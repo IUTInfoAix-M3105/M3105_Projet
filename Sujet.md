@@ -1,4 +1,4 @@
-# Simulateur d'un réseau ferroviaire - HyperFrisette
+# Simulateur d'un réseau alternatif de transport - HyperFrisette
 
 **Date de rendu : 20 novembre 2017 à 23h59**  
 **Date de soutenance : 23 novembre 2017**
@@ -63,7 +63,7 @@ La mise en œuvre du projet passera par la réalisation des classes et méthodes
 Une `EntrepriseFrroviaire` est caractérisée par des attributs de base (nom, numéro SIREN, etc). De plus différents types de entreprises existent : `EntrepriseFrroviairePassagers`, `EntrepriseFrroviaireCargo`, `EntrepriseFrroviaireAnimaux`. D'autres spécialisations d'entreprises peuvent s'ajouter ultérieurement. L'attribution des sillons, la facturation peuvent dépendre du type d'entreprise ferroviaire et des `Trains` qu'elle utilise.
 
 ### Trains
-Un `Train` est décrit par le nombre de wagons, dimensions, le propriétaire (l'entreprise ferroviaire à laquelle il appartient). Plusieurs types de trains peuvent être distingués : de passagers, de marchandise, de transport de bétail, de transport de déchets, etc.
+Un `Train` est décrit par ses dimensions, vitesse maximale, le propriétaire (l'entreprise ferroviaire à laquelle il appartient), les wagons qui le composent. Plusieurs types de trains peuvent être distingués : de passagers, de marchandise, de transport de bétail, de transport de déchets, etc.
 
 ### Lignes Ferroviaires
 La création d'une `LigneFerroviaire` concrète devra être réalisée à travers un schéma bien établi. Chaque ligne est constituée de deux `Gares` représentant ses extrémités.
@@ -75,6 +75,8 @@ Cette entité va permettre d'affecter des sillons à des trains suivant différe
 - minimisation du temps de trajet
 D'autres scénarios pourront être ajoutés ultérieurement dans votre application. Le choix du scénario sera fait par l'utilisateur.
 
+### Modèle économique
+**HyperFrisette** gagne son pain en facturant les compagnies ferroviaires pour chaque passage de train sur une ligne. Les prix que chaque compagnie aura à payer pourra dépendre à la fois du type de trains, la vitesse maximale autorisée, du nombre et/ou tonnage des wagons des trains, des lignes ferroviaires et sillons réservés, de la fidelité de la compagnie ferroviaire, .... Le système de facturation est déjà assez complexe et avec le developpement du réseau, aura la tendance de se complexifier davantage. Il faudra donc prévoir un mécanisme flexible de gestion de la facturation qui pourra être adapté ou enrichi par l'utilisateur.
 
 ### Visualisation du système – mode simplifié
 
