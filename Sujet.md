@@ -43,9 +43,9 @@ Notez que les trains sont propriété des compagnies ferroviaires et pas du rés
 
 Pour simplifier la tâche, vous n'aurez pas à gérer les aspects temps réel de l'application. La simulation du passage du temps dans votre système se fera par des itérations actionnées par l'utilisateur de l'application. Chaque itération est composée des étapes suivantes qui devront être réalisées séquentiellement :
 
-1. *Demandes de trajets, déclaration d'incidents* : chaque compagnie ferroviaire a la possibilité de demander des trajets et pour chacun des trajets elle doit spécifier le train qui sera utilisé, anisi que les lignes ferroviares sur lesquelles celui-ci doit circuler pour effectuer le trajet. Par exemple, une compagnie demande le trajet Marseille-Paris dans le réseau contenant 4 lignes  --Marseille-Paris, Marseille-Bordeaux, Bordeaux-Paris, Paris-Lille. Dans ce cas, une des possibilités pourrait être de demander deux lignes Marseille-Paris et Paris-Lille. Une autre possibilité serait de demander trois lignes Marseille-Bordeaux, Bordeaux-Paris, Paris-Lille. Ainsi, plusieurs lignes assemblées dans l'ordre vont constituer le trajet et pour simplifier votre tâche, vous supposerez que c'est à la compagnie de préciser cette ordre. Elle peut également déclarer des pannes sur les trajets en cours.
+1. *Demandes de trajets, déclaration d'incidents* : chaque compagnie ferroviaire a la possibilité de demander des trajets et doit spécifier les train qui seront utilisés pour ces trajets. Les compagnies ferroviaires peuvent également déclarer des pannes sur des trajets en cours.
 2. *Validation* : le contrôleur valide chaque trajet en affectant au train correspondant des sillons choisis par le système pour chacune des lignes réservées.
-3. *Actionner le système* : les trains se déplacent d'une unité de temps.
+3. *Actionner le système* : les trains se déplacent d'une unité de temps (par exemple 10 minutes).
 - le système mets à jour l'emplacement des trains dans le réseau
 - les trains arrivant en gare changent d'état et ne sont plus considérés en déplacement
 - détection des incidents et action correspondante. Pour cela le système mets à jour le temps et vérifie si l'emplacement des trains corerspond à l'affectation des sillons
@@ -88,6 +88,10 @@ Un `Train` est décrit par ses dimensions, vitesse maximale, le propriétaire (l
 
 #### Lignes Ferroviaires
 La création d'une `LigneFerroviaire` concrète devra être réalisée à travers un schéma bien établi. Chaque ligne est constituée de deux `Gares` représentant ses extrémités.
+
+#### Sillon
+Un sillon correspond à un laps de temps d'occupation d'une ligne ferroviaire. Les trains qui se déplacent dans le réseau doivent être affectés à des sillons et circuler en fonction des horaires imposés par ces sillons (sinon la collusion des trains est garantie !). Pour ce faire, lorsqu'une compagnie ferroviaire a besoin d'un trajet, elle fait la demande d'une ou plusieurs ligne ferroviaires qui seront empruntées par un train, et précise également l'odre dans lequel ses lignes seront empruntés. À la validation, s'il y a possibilité, le système attribuera des sillons des lignes ferroviaires demandées au train correspondant. Prenons un exemple où une compagnie demande le trajet Marseille-Paris dans le réseau contenant 4 lignes Marseille-Paris, Marseille-Bordeaux, Bordeaux-Paris et Paris-Lille. Dans ce cas, la compagnier pourrait demander deux lignes Marseille-Paris et Paris-Lille. Une autre possibilité serait de demander trois lignes Marseille-Bordeaux, Bordeaux-Paris, Paris-Lille. Dans le premier cas le système pourra attribuer le sillon 10h-11h pour la ligne Marseille-Paris et le sillon 11h-12h pour la ligne Paris-Lille. Le choix des sillons sera fait par le système.
+
 
 #### Contrôleur
 Cette entité va permettre d'affecter des sillons à des trains suivant différents scénarios. Au moins trois scénarios devraient être intégrés :
