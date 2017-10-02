@@ -41,10 +41,10 @@ Notez que les trains sont propriété des compagnies ferroviaires et pas du rés
 
 ### Fonctionnement général de l'application
 
-Pour simplifier la tâche, vous n'aurez pas à gérer les aspects temps réel de l'application. La simulation du passage du temps dans votre système se fera par des itérations actionnées par l'utilisateur de l'application. Chaque itération est composée des étapes suivantes qui devront être réalisée séquentiellement :
+Pour simplifier la tâche, vous n'aurez pas à gérer les aspects temps réel de l'application. La simulation du passage du temps dans votre système se fera par des itérations actionnées par l'utilisateur de l'application. Chaque itération est composée des étapes suivantes qui devront être réalisées séquentiellement :
 
-1. *Demandes de trajets, déclaration d'incidents* : chaque compagnie ferroviaire a la possibilité de demander des trajets.
-2. *Validation* : le contrôleur valide chaque trajet en leur affectant des sillons
+1. *Demandes de trajets, déclaration d'incidents* : chaque compagnie ferroviaire a la possibilité de demander des trajets et pour chacun des trajets elle doit spécifier le train qui sera utilisé. Elle peut également déclarer des pannes sur les trajets en cours.
+2. *Validation* : le contrôleur valide chaque trajet en affectant au train correspondant un sillon choisi par le système.
 3. *Actionner le système* : les trains se déplacent d'une unité de temps.
 - le système mets à jour l'emplacement des trains dans le réseau
 - les trains arrivant en gare changent d'état et ne sont plus considérés en déplacement
