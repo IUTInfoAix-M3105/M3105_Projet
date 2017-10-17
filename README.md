@@ -11,17 +11,17 @@
 **Date de rendu : 20 novembre 2017 à 23h59**  
 **Date de soutenance : 23 novembre 2017**
 
-*Le non-respect d’une des consignes ci-dessous impliquera une pénalité de 3 points minimum sur la note du projet. Les modalités pour la soutenance seront précisées ultérieurement.*
+*Le non-respect des consignes du projet impliquera une pénalité de 3 points minimum sur la note du projet.*
 
 Au cours de votre travail de conception et de réalisation, pensez à respecter les principes vus dans vos cours de conception objet durant votre formation. Les modalités de réalisation de certaines fonctionnalités ne sont pas forcément spécifiées afin de vous donner une certaine liberté dans la conception. En revanche, vous devez respecter les contraintes imposées dans le sujet et justifier tout choix qui les contredit.
 
 * Avant d'attaquer le projet pensez à lire les [Contraintes de réalisation](ContraintesRealisation.md), vous devrez les respecter scrupuleusement durant votre réalisation.
 
-* Le sujet complet du projet est accessible dans [Sujet.md](Sujet.md).
+* Le sujet complet du projet avec des instructions est accessible dans [Sujet.md](Sujet.md).
 
 * N'oubliez pas le [forum Piazza](https://piazza.com/univ-amu.fr/fall2017/m3105/home) du cours pour poser/partager les questions/réponses.
 
-* Pour organiser correctement votre projet, __un seul membre__ de votre équipe acceptera l'affectation sur GitHub Classroom, ce qui va forker le projet comme d'habitude : https://classroom.github.com/g/VT5CZdK1
-Ensuite, cet membre invitera les autres membres de l'équipe un par un à leur dépôt comme collaborateurs extérieurs (Outside collaborator). À partir de ce moment vous pourrez travailler de façon collaborative sur votre dépôt.
+* Pour organiser correctement votre projet, __un seul membre__ de votre équipe acceptera l'affectation sur GitHub Classroom, ce qui va forker le projet comme d'habitude : https://classroom.github.com/g/VT5CZdK1.
+Ensuite, cet membre invitera les autres membres de l'équipe un par un comme collaborateurs extérieurs (Outside collaborator) à ce dépôt. À vous de choisir si vous voulez qu'un d'entre vous (ou tous) ait les droits d'administration. À partir de ce moment vous pourrez travailler de façon collaborative sur votre dépôt.
 
 La structure du projet a été déjà créée pour vous dans le répertoire `src`, que vous pourrez importer dans un projet Maven.
