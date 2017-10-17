@@ -23,7 +23,9 @@
 
 * Le sujet complet du projet avec des instructions est accessible dans [Sujet.md](Sujet.md).
 
-* N'oubliez pas le [forum Piazza](https://piazza.com/univ-amu.fr/fall2017/m3105/home) du cours pour poser/partager les questions/réponses.
+* Les [Modalités de soutenance](ModalitesSoutenance.md) sont suceptibles d'être modifiées en fonction de l'avancement de votre travail
+
+* Pour poser/partager les questions/réponses : le [forum Piazza](https://piazza.com/univ-amu.fr/fall2017/m3105/home) du cours
 
 
 Au cours de votre travail de conception et de réalisation, pensez à respecter les principes vus dans vos cours de conception objet durant votre formation. Les modalités de réalisation de certaines fonctionnalités ne sont pas forcément spécifiées afin de vous donner une certaine liberté dans la conception. En revanche, vous devez respecter les contraintes imposées dans le sujet et justifier tout choix qui les contredit.
