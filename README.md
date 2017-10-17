@@ -1,4 +1,4 @@
-## Conception et Programmation Objets Avancées [![Build Status](https://travis-ci.com/IUTInfoAix-M3105/M3105_Projet.svg?token=zPXgu159amQhEb4ShTxW&branch=master)](https://travis-ci.com/IUTInfoAix-M3105/M3105_Projet)
+## Conception et Programmation Objets Avancées (M3105) [![Build Status](https://travis-ci.com/IUTInfoAix-M3105/M3105_Projet.svg?token=zPXgu159amQhEb4ShTxW&branch=master)](https://travis-ci.com/IUTInfoAix-M3105/M3105_Projet)
 
 
 
@@ -15,4 +15,10 @@
 
 Au cours de votre travail de conception et de réalisation, pensez à respecter les principes vus dans vos cours de conception objet durant votre formation. Les modalités de réalisation de certaines fonctionnalités ne sont pas forcément spécifiées afin de vous donner une certaine liberté dans la conception. En revanche, vous devez respecter les contraintes imposées dans le sujet et justifier tout choix qui les contredit.
 
-Le sujet complet du projet est accessible dans le fichier [Sujet.md](Sujet.md). Cliquez [ici](https://classroom.github.com/g/-M5q3iEE) pour forker le projet. La structure du projet a été déjà créée pour vous dans le répertoire `src`, que vous pourrez importer dans un projet Maven.
+* Avant d'attaquer le projet pensez à lire les [Contraintes de réalisation](ContraintesRealisation.md), vous devrez les respecter scrupuleusement durant votre réalisation.
+
+* Le sujet complet du projet est accessible dans [Sujet.md](Sujet.md).
+
+* N'oubliez pas le [forum Piazza](https://piazza.com/univ-amu.fr/fall2017/m3105/home) du cours pour poser/partager les questions/réponses.
+
+* Cliquez [ici](https://classroom.github.com/g/-M5q3iEE) pour forker le projet et accepter l'affectation sur GitHub Classroom. La structure du projet a été déjà créée pour vous dans le répertoire `src`, que vous pourrez importer dans un projet Maven.
