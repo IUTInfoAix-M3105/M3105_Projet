@@ -21,4 +21,6 @@ Au cours de votre travail de conception et de réalisation, pensez à respecter 
 
 * N'oubliez pas le [forum Piazza](https://piazza.com/univ-amu.fr/fall2017/m3105/home) du cours pour poser/partager les questions/réponses.
 
-* Cliquez [ici](https://classroom.github.com/g/-M5q3iEE) pour forker le projet et accepter l'affectation sur GitHub Classroom. La structure du projet a été déjà créée pour vous dans le répertoire `src`, que vous pourrez importer dans un projet Maven.
+* Instructions pour faire le fork et accepter l'affectation sur GitHub Classroom : ?????????????
+
+La structure du projet a été déjà créée pour vous dans le répertoire `src`, que vous pourrez importer dans un projet Maven.
