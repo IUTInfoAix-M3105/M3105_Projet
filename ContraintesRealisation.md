@@ -10,13 +10,10 @@ perdre des points bêtement.
 * Les tests unitaires doivent être réalisés pour valider chaque fonctionnalité programmée tout au long du développement 
 du projet.
 * Votre base de code devra toujours être dans un état sain (le code compile et les tests passent). Pour 
-vérifier cela au fur et à mesure des ajouts des contributions, vous pouvez utiliser des outils comme TravisCI.
-* Mis à part le code trivial (getter/setter) toute ligne de code devrait être couverte par au moins un test. 
-Vous devriez considérer qu'une ligne non couverte par au moins un test unitaire est inexistante. Vous utiliserez 
-l'outil de mesure de la couverture de code `Coverall` pour cela.
+vérifier cela au fur et à mesure des ajouts des contributions, vous utiliserez de manière plus ou moins transparente l'outil d'intégration continue TravisCI (qui est déjà intégré dans votre projet).
 * Le respect des conventions de nommage du langage Java est **impératif**. Pour garantir le respect de ces aspects 
 esthétiques, les IDE vous fournissent tous des outils de nettoyage, veillez à bien les utiliser avant le moindre partage de code.
-* Le programme devra gérer proprement les exceptions. Ne jamais lever une exception et ne rien faire.
+* Le programme devra gérer proprement les exceptions. Ne jamais lever une exception et ne rien faire !
 * Le code doit être “propre” (au sens retenu dans l'ouvrage Clean Code de Robert C. Martin). La lisibilité et 
 l'expressivité du code ne sont pas une option. La modélisation objet et le respects des bonnes pratiques de 
 programmation (principes SOLID entre autre) font partie des règles que vous devez impérativement mettre en oeuvre. 
@@ -26,7 +23,6 @@ Pour mesurer votre dette technique, vous pouvez mettre en oeuvre des outils comm
 * La livraison finale de votre code devra se faire sur un dépôt GitHub privé. Ce dépôt portera les noms de 
 famille de chaque membre accolés par ordre alphabétique. Par exemple, si les noms sont Dupont, Martin, Durand et Cornet, 
 ce dernier s'appellera : `CornetDupontDurantMartin_ProjetM3105`
-* Attention à correctement nommer vos contributeurs pour que le correcteur puisse suivre individuellement les contributions des membres de votre équipe (Un exemple qui s'est déjà produit, le nom de contributeur `Choucroute Garnie` n'apporte aucun renseignement vis-à-vis de la personne réelle qui a fait une contribution).
 * Le projet devra disposer d'une branche `master` contenant uniquement les `release`. Dans cette branche, chaque 
 `release` fera l'objet d'un tag dont le nom donnera une indication sur la version de votre logiciel (par exemple, v0.1.1 
 ou v0.1.1alpha).
@@ -43,8 +39,7 @@ des `pull-request` pour permettre une revue de code systématique.
 branche de fonctionnalité, l'usage de la commande `rebase` est conseillé par rapport à la commande `merge`.
 
 ## Contraintes de rendu pour le livrable final
-* La construction ainsi que le cycle de vie du logiciel devront être gérés avec un outil dédié comme Maven. Un projet 
-sans un gestionnaire adapté du cycle de vie du code source ne sera pas évalué.
+* La construction ainsi que le cycle de vie du logiciel devront être gérés avec Maven.
 * L'archive contiendra un dossier `src` avec l'intégralité du code ainsi qu'un fichier `install/README.md` contenant 
 les indications pour compiler et exécuter le programme. Aucun fichier binaire exécutable ne doit être dans l'archive.
 * Le fichier `install/README.md` doit être lisible par un utilisateur quelconque et auto-suffisant (aucune autre 
