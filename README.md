@@ -13,13 +13,13 @@
 
 *Le non-respect des consignes du projet impliquera une pénalité de 3 points minimum sur la note du projet.*
 
-* Pour organiser correctement votre projet, voici les étapes à suivre par chaque équipe :
+* Les étapes à suivre par chaque équipe pour organiser correctement votre projet :
     1. __Un seul membre__ de l'équipe acceptera l'affectation sur GitHub Classroom, ce qui permettra de forker le projet comme vous en avez l'habitude : https://classroom.github.com/g/VT5CZdK1.
     2. Au moment de l'acceptation de l'invitation, cet membre d'équipe choisira un nom d'équipe ("team" en anglais) qui sera constitué des noms de famille de chaque membre accolés par ordre alphabétique. Par exemple, si les noms sont Dupont, Martin, Durand et Cornet, alors l'équipe s'appellera : `CornetDupontDurantMartin`.
     3. Ensuite, une fois le projet forké, l'étudiant invitera les autres membres de l'équipe un par un comme collaborateurs extérieurs (Outside collaborator) à ce dépôt. À vous de choisir si vous voulez qu'un d'entre vous (ou tous) ait les droits d'administration. À partir de ce moment vous pourrez travailler de façon collaborative sur votre dépôt.
     4. La structure du projet a été déjà créée pour vous dans le répertoire `src`, que vous pourrez importer dans un projet Maven.
     
-* Avant d'attaquer le projet pensez à lire les [Contraintes de réalisation](ContraintesRealisation.md), vous devrez les respecter scrupuleusement durant votre réalisation.
+* Avant d'attaquer le sujet pensez à lire les [Contraintes de réalisation](ContraintesRealisation.md), vous devrez les respecter scrupuleusement durant votre réalisation.
 
 * Le sujet complet du projet avec des instructions est accessible dans [Sujet.md](Sujet.md).
 
