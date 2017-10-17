@@ -20,9 +20,9 @@ programmation (principes SOLID entre autre) font partie des règles que vous dev
 Pour mesurer votre dette technique, vous pouvez mettre en oeuvre des outils comme `SonarQube`
 
 ## Instruction concernant la gestion de version
-* La livraison finale de votre code devra se faire sur un dépôt GitHub privé. Ce dépôt portera les noms de 
+* La livraison finale de votre code devra se faire sur un dépôt GitHub privé. Ce dépôt contiendra les noms de 
 famille de chaque membre accolés par ordre alphabétique. Par exemple, si les noms sont Dupont, Martin, Durand et Cornet, 
-ce dernier s'appellera : `CornetDupontDurantMartin_ProjetM3105`
+ce dernier s'appellera : `m3105-projet-CornetDupontDurantMartin`
 * Le projet devra disposer d'une branche `master` contenant uniquement les `release`. Dans cette branche, chaque 
 `release` fera l'objet d'un tag dont le nom donnera une indication sur la version de votre logiciel (par exemple, v0.1.1 
 ou v0.1.1alpha).
