@@ -21,6 +21,7 @@ Au cours de votre travail de conception et de réalisation, pensez à respecter 
 
 * N'oubliez pas le [forum Piazza](https://piazza.com/univ-amu.fr/fall2017/m3105/home) du cours pour poser/partager les questions/réponses.
 
-* Instructions pour faire le fork et accepter l'affectation sur GitHub Classroom : ?????????????
+* Pour organiser correctement votre projet, __un seul membre__ de votre équipe acceptera l'affectation sur GitHub Classroom, ce qui va forker le projet comme d'habitude : https://classroom.github.com/g/VT5CZdK1
+Ensuite, cet membre invitera les autres membres de l'équipe un par un à leur dépôt comme collaborateurs extérieurs (Outside collaborator). À partir de ce moment vous pourrez travailler de façon collaborative sur votre dépôt.
 
 La structure du projet a été déjà créée pour vous dans le répertoire `src`, que vous pourrez importer dans un projet Maven.
