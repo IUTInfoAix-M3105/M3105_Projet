@@ -46,9 +46,9 @@ Pour simplifier la tâche, vous n'aurez pas à gérer les aspects temps réel de
 1. *Demandes de trajets, déclaration d'incidents* : chaque compagnie ferroviaire a la possibilité de demander des trajets et doit spécifier les trains qui seront utilisés pour ces trajets. Les compagnies ferroviaires peuvent également déclarer des pannes sur des trajets en cours.
 2. *Validation* : le contrôleur valide chaque trajet en affectant au train correspondant des sillons choisis par le système pour chacune des lignes réservées.
 3. *Actionner le système* : les trains se déplacent d'une unité de temps (par exemple 10 minutes).
-- le système mets à jour l'emplacement des trains dans le réseau
-- les trains arrivant en gare changent d'état et ne sont plus considérés en déplacement
-- détection des incidents et action correspondante. Pour cela le système mets à jour le temps et vérifie si l'emplacement des trains corerspond à l'affectation des sillons
+    - le système mets à jour l'emplacement des trains dans le réseau
+    - les trains arrivant en gare changent d'état et ne sont plus considérés en déplacement
+    - détection des incidents et action correspondante. Pour cela le système mets à jour le temps et vérifie si l'emplacement des trains corerspond à l'affectation des sillons
 4. *Affichage* : mise à jour des vues permettant d'afficher l'état actuel du système, les facturations.
 
 Un utilisateur pourra simuler le fonctionnement du logiciel en déroulant étape après étape le scénario décrit ci-dessus.
