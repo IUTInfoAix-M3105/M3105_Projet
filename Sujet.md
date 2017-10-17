@@ -96,12 +96,12 @@ Un sillon correspond à un laps de temps d'occupation d'une ligne ferroviaire. L
 
 
 #### Contrôleur
-Cette entité va permettre d'affecter des sillons à des trains suivant différents scénarios. Au moins trois scénarios devraient être intégrés :
+Cette entité représente en quelque sorte le regulateur du système qui veille au bon fonctionnement de celui-ci. Notamment, elle a la responsabilité d'affecter des sillons à des trains suivant différents scénarios. Au moins trois scénarios devraient être intégrés :
 - attribution suivant un algorithme glouton : le premier sillon disponible est attribué au premier trajet demandant l'utilisation de la ligne
-- minimisation du prix pour la compagnie ferroviaire en attribuant les sillons les moins coûteux
+- minimisation du prix pour les compagnies ferroviaires en attribuant les sillons les moins coûteux
 - minimisation du temps de trajet
 
-D'autres scénarios pourront être ajoutés ultérieurement dans votre application. Le choix du scénario sera fait par l'utilisateur. Le contrôleur s'assure également que les règles sont respectées et que les trains circulent bien en conformités aux sillons qui leur ont été affectés.
+D'autres scénarios pourront être ajoutés ultérieurement dans votre application. Le choix du scénario sera fait par l'utilisateur. Écrivez la méthode `attribuerSillons()` qui permettra pour un trajet demandé, de choisir et affecter les sillons suivant le scenarios fixée par l'utilisateur (et qui peut changer/évoluer à tout moment). Le contrôleur s'assure également que les règles sont respectées et que les trains circulent bien en conformités aux sillons qui leur ont été affectés.
 
 ### Modèle économique
 **HyperFrisette** gagne son pain en facturant les compagnies ferroviaires pour chaque passage de train sur une ligne. Les prix que chaque compagnie aura à payer pourra dépendre à la fois : du type de trains, la vitesse maximale autorisée, du nombre et/ou tonnage des wagons des trains, des lignes ferroviaires et sillons réservés, de la fidelité de la compagnie ferroviaire, .... Toutes ces options peuvent être combinées entre elles par l'utilisateur. Le système de facturation est déjà assez complexe et avec le developpement du réseau, aura la tendance de se complexifier davantage. Il faudra donc prévoir un mécanisme flexible de gestion de la facturation qui pourra être adapté ou enrichi par l'utilisateur.
