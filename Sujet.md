@@ -18,7 +18,7 @@ La note du projet prendra en compte :
 -  Le respect des consignes du sujet et des [contraintes de réalisation](ContraintesRealisation.md).
 -  La modélisation objet de votre application. Les correcteurs seront particulièrement attentifs à l’utilisation appropriée des patrons de conception que vous aurez mis en œuvre
 -  La propreté et la lisibilité du code ainsi que tout ce qui facilitera sa compréhension par les correcteurs (noms des variables, commentaires, modularité, etc ).
--  La facilité d'utilisation du code (le fichier INSTALL/README est-il lisible et suffit-il pour utiliser le code ?). La compilation de votre code devrait marcher sur tout type de machine - pensez à tester avant le rendu final.
+-  La compilation de votre code devrait marcher sur tout type de machine - pensez à tester avant le rendu final.
 -  La correction et la cohérence du code.
 -  La présentation de votre application durant la soutenance.
 
