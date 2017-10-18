@@ -10,14 +10,14 @@ perdre des points bêtement.
 * Les tests unitaires doivent être réalisés pour valider chaque fonctionnalité programmée tout au long du développement 
 du projet.
 * Votre base de code devra toujours être dans un état sain (le code compile et les tests passent). Pour 
-vérifier cela au fur et à mesure des ajouts des contributions, vous utiliserez de manière plus ou moins transparente l'outil d'intégration continue TravisCI (qui est déjà intégré dans votre projet).
+vérifier cela au fur et à mesure des ajouts des contributions, vous utiliserez de manière plus ou moins transparente l'outil d'intégration continue TravisCI (qui est déjà actif pour votre projet mais dont il faudra personnaliser le badge pour visualiser facilement l'état).
 * Le respect des conventions de nommage du langage Java est **impératif**. Pour garantir le respect de ces aspects 
 esthétiques, les IDE vous fournissent tous des outils de nettoyage, veillez à bien les utiliser avant le moindre partage de code.
 * Le programme devra gérer proprement les exceptions. Ne jamais lever une exception et ne rien faire !
 * Le code doit être “propre” (au sens retenu dans l'ouvrage Clean Code de Robert C. Martin). La lisibilité et 
 l'expressivité du code ne sont pas une option. La modélisation objet et le respects des bonnes pratiques de 
 programmation (principes SOLID entre autre) font partie des règles que vous devez impérativement mettre en oeuvre. 
-Pour mesurer votre dette technique, vous pouvez mettre en oeuvre des outils comme `SonarQube`
+Pour mesurer votre dette technique, vous pouvez mettre en oeuvre des outils comme `SonarQube` ou `CodeClimate`.
 
 ## Instruction concernant la gestion de version
 * La livraison finale de votre code devra se faire sur un dépôt GitHub privé. Ce dépôt contiendra les noms de 
@@ -42,6 +42,9 @@ branche de fonctionnalité, l'usage de la commande `rebase` est conseillé par r
 * La construction ainsi que le cycle de vie du logiciel devront être gérés avec Maven.
 * L'archive contiendra un dossier `src` avec l'intégralité du code ainsi qu'un fichier `install/README.md` contenant 
 les indications pour compiler et exécuter le programme. Aucun fichier binaire exécutable ne doit être dans l'archive.
+* Le modèle de projet fournit, est configuré pour créer un Jar executable auto-contenu (les dépendances sont contenues 
+dans l'archive). Pour produire votre jar, il suffit d'éxécuter la commande `mvn package`. L'archive sera située dans le 
+dossier `target/` de votre projet. Il sera executable avec la commande suivante : `java -jar M3105_Projet-1.0-SNAPSHOT.jar`
 * Le fichier `install/README.md` doit être lisible par un utilisateur quelconque et auto-suffisant (aucune autre 
 connaissance ne doit être requise pour une compréhension complète) pour compiler et exécuter le programme. Il doit 
 contenir les instructions concernant les contraintes logicielles de l'environnement d'exécution afin de guider 
