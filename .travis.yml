@@ -1,9 +1,12 @@
 language: java
 
 before_script:
-  - "export DISPLAY=:99.0"
-  - "sh -e /etc/init.d/xvfb start"
-  - sleep 3 # give xvfb some time to start
+- curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
+- chmod +x ./cc-test-reporter
+- ./cc-test-reporter before-build
+- "export DISPLAY=:99.0"
+- "sh -e /etc/init.d/xvfb start"
+- sleep 3 # give xvfb some time to start
 
 jdk:
  - oraclejdk8
@@ -14,4 +17,5 @@ script:
 - mvn cobertura:cobertura
 
 after_success:
-  - bash <(curl -s https://codecov.io/bash)
+- ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT 
+- bash <(curl -s https://codecov.io/bash)
