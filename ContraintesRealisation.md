@@ -1,5 +1,5 @@
 # Contraintes de réalisation
-Ce projet constitue dans votre parcours une première expérience de réalisation logicielle complexe. Il est l'occasion 
+Ce projet constitue dans votre parcours une expérience de réalisation logicielle complexe. Il est l'occasion 
 pour nous de vous faire expérimenter les pratiques de développement que vous retrouverez dans l'univers professionnel. 
 Ce document a donc pour objet de vous donner l'ensemble des contraintes techniques que vous devrez respecter durant ce 
 projet. L'évaluation prenant en compte ces consignes, vous devez impérativement les prendre en compte pour ne pas 
@@ -40,15 +40,10 @@ branche de fonctionnalité, l'usage de la commande `rebase` est conseillé par r
 
 ## Contraintes de rendu pour le livrable final
 * La construction ainsi que le cycle de vie du logiciel devront être gérés avec Maven.
-* L'archive contiendra un dossier `src` avec l'intégralité du code ainsi qu'un fichier `install/README.md` contenant 
-les indications pour compiler et exécuter le programme. Aucun fichier binaire exécutable ne doit être dans l'archive.
+* L'archive contiendra un dossier `src` avec l'intégralité du code. Aucun fichier binaire exécutable ne doit être dans l'archive.
 * Le modèle de projet fournit, est configuré pour créer un Jar executable auto-contenu (les dépendances sont contenues 
 dans l'archive). Pour produire votre jar, il suffit d'éxécuter la commande `mvn package`. L'archive sera située dans le 
 dossier `target/` de votre projet. Il sera executable avec la commande suivante : `java -jar M3105_Projet-1.0-SNAPSHOT.jar`
-* Le fichier `install/README.md` doit être lisible par un utilisateur quelconque et auto-suffisant (aucune autre 
-connaissance ne doit être requise pour une compréhension complète) pour compiler et exécuter le programme. Il doit 
-contenir les instructions concernant les contraintes logicielles de l'environnement d'exécution afin de guider 
-parfaitement l'utilisateur.
 * Un dossier `test` contenant les tests unitaires devra également être inclus dans l'archive avec les instructions pour 
 leur exécution.
 * Le dossier `doc` devra contenir la documentation complète du code source (JavaDoc).
